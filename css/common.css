@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  background-color: #fafafa;
+  color: #2e2f42;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*======== task 1 ========*/
+#categories {
+  padding: 24px;
+  max-width: 440px;
+  background-color: #fff;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-bottom: 16px;
+}
+
+.item {
+  background-color: #f6f6fe;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.item+.item {
+  margin-top: 24px;
+}
+
+.item>ul>li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 7px 16px;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.item>ul :last-child {
+  margin-bottom: 0;
+}
+/*======== task 2 ========*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding: 100px min(10.8%, 156px);
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.gallery-item {
+  max-width: calc((100% - 2 * 24px) / 3);
+  min-width: 225px;
+}
+
+.gallery-item img {
+  aspect-ratio: 360/300;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/*========= task 3 ==========*/
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  margin-bottom: 16px;
+}
+
+#name-input {
+  margin-top: 24px;
+}
+
+input:focus,
+input:active {
+  border-color: #000;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-bottom: 24px;
+}
+/*========= task 4 ==========*/
+
+.login-form {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 408px;
+  padding: 24px;
+}
+
+label {
+  display: block;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4e75ff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  outline: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+/*========== task 5 =========*/
+.widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 345px;
+  height: 280px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.change-color {
+  margin-top: 16px;
+}
+
+/*=======task 6========= */
+
+#controls {
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  justify-content: center;
+  background-color: #f6f6fe;
+}
+
+#boxes {
+  display: flex;
+  gap: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 486px;
+  max-width: fit-content;
+  border-radius: 8px;
+  padding: 32px;
+  background-color: #f6f6fe;
+}
+
+#controls>input {
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+}
+
+#controls>button {
+  width: 120px;
+}
+
+button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+button[data-destroy]:hover,
+button[data-destroy]:focus {
+  background-color: #ff7070;
+}
